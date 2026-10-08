@@ -1,0 +1,21 @@
+.contact { padding-bottom: clamp(4rem, 8vw, 7rem); }
+
+.contact__panel {
+  display: grid;
+  gap: 2rem;
+  align-items: end;
+  padding: clamp(2rem, 6vw, 4.5rem);
+  border-radius: var(--radius-lg);
+  background: var(--ink);
+  color: var(--paper);
+}
+
+.contact__title { max-width: 14ch; font-size: var(--step-3); }
+
+.contact__text { margin-top: 1rem; color: color-mix(in srgb, var(--paper) 75%, transparent); }
+
+.contact__panel :focus-visible { outline-color: var(--paper); }
+
+@media (min-width: 48rem) {
+  .contact__panel { grid-template-columns: minmax(0, 1.4fr) auto; }
+}

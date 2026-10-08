@@ -1,0 +1,28 @@
+.projects {
+  margin-top: clamp(2rem, 5vw, 3.5rem);
+  border-bottom: 1px solid var(--line);
+}
+
+.project {
+  display: grid;
+  gap: 1rem;
+  padding-block: 2rem;
+  border-top: 1px solid var(--line);
+}
+
+.project__name { font-size: var(--step-2); }
+.project__body { display: grid; gap: 1rem; align-content: start; }
+
+.project__link {
+  justify-self: start;
+  font-weight: 600;
+  color: var(--accent-text);
+  text-underline-offset: 0.25em;
+}
+
+@media (min-width: 60rem) {
+  .project {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.3fr);
+    gap: 4rem;
+  }
+}

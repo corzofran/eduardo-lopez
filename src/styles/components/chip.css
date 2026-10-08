@@ -1,0 +1,11 @@
+.chips { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+
+.chip {
+  padding: 0.25rem 0.75rem;
+  border-radius: var(--radius-pill);
+  background: color-mix(in srgb, var(--accent) 12%, var(--surface));
+  color: var(--accent-text);
+  font-size: var(--step--1);
+  font-weight: 600;
+  transition: background-color 0.3s var(--ease), color 0.3s var(--ease);
+}

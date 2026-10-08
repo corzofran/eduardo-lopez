@@ -1,0 +1,21 @@
+/* Punto de entrada de estilos. El orden importa: base → layout → componentes → secciones. */
+@import "base/tokens.css";
+@import "base/reset.css";
+@import "base/typography.css";
+@import "base/utilities.css";
+@import "base/animations.css";
+
+@import "layout/container.css";
+@import "layout/split.css";
+@import "layout/header.css";
+@import "layout/footer.css";
+
+@import "components/button.css";
+@import "components/chip.css";
+@import "components/facts.css";
+@import "components/tuner.css";
+@import "components/project.css";
+
+@import "sections/hero.css";
+@import "sections/stack.css";
+@import "sections/contact.css";

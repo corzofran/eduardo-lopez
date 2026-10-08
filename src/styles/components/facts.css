@@ -1,0 +1,10 @@
+.facts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.facts__item { padding-top: 0.75rem; border-top: 1px solid var(--line); }
+.facts__term { color: var(--ink-soft); font-size: var(--step--1); }
+.facts__value { font-weight: 600; }

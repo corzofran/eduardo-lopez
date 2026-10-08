@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daniel Eduardo López Díaz | Desarrollador frontend y diseñador</title>
+  <meta name="description" content="Portafolio de Daniel Eduardo López Díaz, estudiante de Ingeniería en Software en la Universidad Politécnica de Chiapas. Desarrollo frontend, diseño de interfaces y proyectos de inteligencia artificial.">
+  <meta name="author" content="Daniel Eduardo López Díaz">
+  <meta name="color-scheme" content="light dark">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Daniel Eduardo López Díaz | Desarrollador frontend y diseñador">
+  <meta property="og:description" content="Diseño interfaces y las programo. Estudiante de Ingeniería en Software en la Universidad Politécnica de Chiapas.">
+
+  <link rel="icon" href="src/assets/icons/favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;600;700;800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="src/styles/main.css">
+  <script src="src/scripts/core/theme-init.js"></script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Daniel Eduardo López Díaz",
+    "jobTitle": "Desarrollador frontend y diseñador",
+    "affiliation": { "@type": "CollegeOrUniversity", "name": "Universidad Politécnica de Chiapas" },
+    "sameAs": ["https://github.com/Daniellopez29"]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="brand" href="#inicio" aria-label="Daniel Eduardo López Díaz, ir al inicio">DE</a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu-principal" data-nav-toggle>Menú</button>
+
+      <nav class="nav" id="menu-principal" aria-label="Principal" data-nav>
+        <ul class="nav__list">
+          <li><a class="nav__link" href="#sobre-mi">Sobre mí</a></li>
+          <li><a class="nav__link" href="#proyectos">Proyectos</a></li>
+          <li><a class="nav__link" href="#herramientas">Herramientas</a></li>
+          <li><a class="nav__link" href="#formacion">Formación</a></li>
+          <li><a class="nav__link" href="https://github.com/Daniellopez29" target="_blank" rel="noopener noreferrer">GitHub<span class="visually-hidden"> (se abre en otra pestaña)</span></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <section class="hero" id="inicio" aria-labelledby="titulo-hero">
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <h1 class="hero__title" id="titulo-hero">Daniel Eduardo López Díaz</h1>
+          <p class="hero__lead">Estudiante de Ingeniería en Software. Diseño interfaces y las programo.</p>
+          <div class="hero__actions">
+            <a class="button button--primary" href="https://github.com/Daniellopez29" target="_blank" rel="noopener noreferrer">
+              <svg class="button__icon" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+              Ver mi GitHub<span class="visually-hidden"> (se abre en otra pestaña)</span>
+            </a>
+            <a class="button button--ghost" href="#proyectos">Ver proyectos</a>
+          </div>
+        </div>
+
+        <form class="tuner" aria-labelledby="titulo-tuner" data-theme-tuner>
+          <h2 class="tuner__title" id="titulo-tuner">Cambia el tema de esta página</h2>
+          <p class="tuner__hint">Todo el sitio usa tokens de diseño. Elige un acento y un modo, y cambia al instante.</p>
+
+          <fieldset class="tuner__group">
+            <legend class="tuner__legend">Color de acento</legend>
+            <div class="swatches">
+              <label class="swatch"><input class="swatch__input" type="radio" name="accent" value="cobalt"><span class="swatch__dot" data-swatch="cobalt"></span><span class="visually-hidden">Cobalto</span></label>
+              <label class="swatch"><input class="swatch__input" type="radio" name="accent" value="mint"><span class="swatch__dot" data-swatch="mint"></span><span class="visually-hidden">Menta</span></label>
+              <label class="swatch"><input class="swatch__input" type="radio" name="accent" value="sun"><span class="swatch__dot" data-swatch="sun"></span><span class="visually-hidden">Ámbar</span></label>
+              <label class="swatch"><input class="swatch__input" type="radio" name="accent" value="rose"><span class="swatch__dot" data-swatch="rose"></span><span class="visually-hidden">Rosa</span></label>
+            </div>
+          </fieldset>
+
+          <fieldset class="tuner__group">
+            <legend class="tuner__legend">Modo</legend>
+            <div class="segmented">
+              <span class="segmented__option"><input class="segmented__input" type="radio" name="mode" value="light" id="modo-claro"><label class="segmented__label" for="modo-claro">Claro</label></span>
+              <span class="segmented__option"><input class="segmented__input" type="radio" name="mode" value="dark" id="modo-oscuro"><label class="segmented__label" for="modo-oscuro">Oscuro</label></span>
+            </div>
+          </fieldset>
+
+          <output class="tuner__token" data-token-readout>--accent: #3b4bff</output>
+        </form>
+      </div>
+    </section>
+
+    <section class="section" id="sobre-mi" aria-labelledby="titulo-sobre-mi">
+      <div class="container split">
+        <h2 class="section__title" id="titulo-sobre-mi">Entre el diseño y el código</h2>
+        <div>
+          <div class="prose">
+            <p>Estudio Ingeniería en Software en la Universidad Politécnica de Chiapas. Soy desarrollador frontend y me gusta diseñar: una interfaz tiene que verse bien y, además, estar bien construida.</p>
+            <p>Fuera de clase armo proyectos personales con inteligencia artificial: un asistente de voz, un detector de deepfakes y optimización con algoritmos genéticos.</p>
+          </div>
+          <dl class="facts">
+            <div class="facts__item"><dt class="facts__term">Enfoque</dt><dd class="facts__value">Frontend y diseño de interfaces</dd></div>
+            <div class="facts__item"><dt class="facts__term">Universidad</dt><dd class="facts__value">Universidad Politécnica de Chiapas</dd></div>
+            <div class="facts__item"><dt class="facts__term">Entorno de trabajo</dt><dd class="facts__value">Windows y Android Studio</dd></div>
+            <div class="facts__item"><dt class="facts__term">Código</dt><dd class="facts__value"><a href="https://github.com/Daniellopez29" target="_blank" rel="noopener noreferrer">github.com/Daniellopez29<span class="visually-hidden"> (se abre en otra pestaña)</span></a></dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="proyectos" aria-labelledby="titulo-proyectos">
+      <div class="container">
+        <h2 class="section__title" id="titulo-proyectos">Proyectos</h2>
+
+        <ul class="projects">
+          <li class="project">
+            <h3 class="project__name">Vault</h3>
+            <div class="project__body">
+              <p>App móvil en Flutter para que los coleccionistas administren sus activos. Trabajo en equipo con control de versiones en Git.</p>
+              <ul class="chips" aria-label="Tecnologías"><li class="chip">Flutter</li><li class="chip">Dart</li><li class="chip">Git</li></ul>
+              <a class="project__link" href="https://github.com/Daniellopez29/vault-app" target="_blank" rel="noopener noreferrer">Ver repositorio de Vault<span class="visually-hidden"> (se abre en otra pestaña)</span></a>
+            </div>
+          </li>
+          <li class="project">
+            <h3 class="project__name">DeepScan</h3>
+            <div class="project__body">
+              <p>Sistema inteligente para detectar deepfakes. Es mi proyecto integrador de la carrera.</p>
+              <ul class="chips" aria-label="Tecnologías"><li class="chip">Inteligencia artificial</li><li class="chip">Redes neuronales</li></ul>
+            </div>
+          </li>
+          <li class="project">
+            <h3 class="project__name">J.A.R.V.I.S.</h3>
+            <div class="project__body">
+              <p>Asistente de voz en Python inspirado en la IA de Iron Man. Proyecto personal.</p>
+              <ul class="chips" aria-label="Tecnologías"><li class="chip">Python</li><li class="chip">Reconocimiento de voz</li></ul>
+            </div>
+          </li>
+          <li class="project">
+            <h3 class="project__name">CleanHome-OPT</h3>
+            <div class="project__body">
+              <p>Optimiza las rutinas de limpieza del hogar con algoritmos genéticos. Propuesta para la materia de Inteligencia Artificial.</p>
+              <ul class="chips" aria-label="Tecnologías"><li class="chip">Algoritmos genéticos</li><li class="chip">Optimización</li></ul>
+            </div>
+          </li>
+          <li class="project">
+            <h3 class="project__name">Concurrencia en JavaScript</h3>
+            <div class="project__body">
+              <p>App en JavaScript puro con Web Workers y Service Worker, para la materia de Programación concurrente.</p>
+              <ul class="chips" aria-label="Tecnologías"><li class="chip">JavaScript</li><li class="chip">Web Workers</li><li class="chip">Service Worker</li></ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" id="herramientas" aria-labelledby="titulo-herramientas">
+      <div class="container">
+        <h2 class="section__title" id="titulo-herramientas">Herramientas con las que trabajo</h2>
+
+        <div class="stack">
+          <div class="stack__group">
+            <h3 class="stack__title">Interfaces</h3>
+            <ul class="chips"><li class="chip">HTML</li><li class="chip">CSS</li><li class="chip">JavaScript</li><li class="chip">Diseño responsive</li><li class="chip">Accesibilidad</li></ul>
+          </div>
+          <div class="stack__group">
+            <h3 class="stack__title">Móvil</h3>
+            <ul class="chips"><li class="chip">Flutter</li><li class="chip">Dart</li><li class="chip">Android Studio</li></ul>
+          </div>
+          <div class="stack__group">
+            <h3 class="stack__title">Inteligencia artificial</h3>
+            <ul class="chips"><li class="chip">Python</li><li class="chip">Redes neuronales</li><li class="chip">Algoritmos genéticos</li></ul>
+          </div>
+          <div class="stack__group">
+            <h3 class="stack__title">Datos y arquitectura</h3>
+            <ul class="chips"><li class="chip">Bases de datos</li><li class="chip">Java</li><li class="chip">Arquitectura de software</li><li class="chip">Git</li></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="formacion" aria-labelledby="titulo-formacion">
+      <div class="container split">
+        <h2 class="section__title" id="titulo-formacion">Formación</h2>
+        <div class="prose">
+          <p><strong>Ingeniería en Software</strong><br>Universidad Politécnica de Chiapas</p>
+          <p>Materias que más han moldeado mi forma de construir:</p>
+          <ul class="chips" aria-label="Materias">
+            <li class="chip">Desarrollo móvil</li>
+            <li class="chip">Arquitectura de software</li>
+            <li class="chip">Redes neuronales</li>
+            <li class="chip">Inteligencia artificial</li>
+            <li class="chip">Bases de datos</li>
+            <li class="chip">Estructura de datos</li>
+            <li class="chip">Programación concurrente</li>
+            <li class="chip">Minería de datos</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" aria-labelledby="titulo-contacto">
+      <div class="container">
+        <div class="contact__panel">
+          <div>
+            <h2 class="contact__title" id="titulo-contacto">Mi código está en GitHub</h2>
+            <p class="contact__text">Ahí están mis repositorios y lo que estoy construyendo ahora.</p>
+          </div>
+          <a class="button button--primary" href="https://github.com/Daniellopez29" target="_blank" rel="noopener noreferrer">Ver mi GitHub<span class="visually-hidden"> (se abre en otra pestaña)</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <p>&copy; <span data-year>2026</span> Daniel Eduardo López Díaz</p>
+      <p>Hecho a mano con HTML, CSS y JavaScript, sin frameworks.</p>
+    </div>
+  </footer>
+
+  <script src="src/scripts/core/dom.js" defer></script>
+  <script src="src/scripts/core/storage.js" defer></script>
+  <script src="src/scripts/features/theme-tuner.js" defer></script>
+  <script src="src/scripts/features/nav-menu.js" defer></script>
+  <script src="src/scripts/main.js" defer></script>
+</body>
+</html>

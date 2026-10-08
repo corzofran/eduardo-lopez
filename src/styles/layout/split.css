@@ -1,0 +1,9 @@
+/* Dos columnas: título a la izquierda, contenido a la derecha. */
+.split { display: grid; gap: 2.5rem; }
+
+@media (min-width: 60rem) {
+  .split {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.3fr);
+    gap: 4rem;
+  }
+}

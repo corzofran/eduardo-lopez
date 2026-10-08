@@ -1,0 +1,20 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.8rem 1.4rem;
+  border: 2px solid transparent;
+  border-radius: var(--radius-pill);
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform 0.2s var(--ease), border-color 0.2s var(--ease),
+    background-color 0.3s var(--ease), color 0.3s var(--ease);
+}
+
+.button__icon { width: 1.25rem; height: 1.25rem; fill: currentColor; }
+
+.button--primary { background: var(--accent); color: var(--accent-ink); }
+.button--primary:hover { transform: translateY(-2px); }
+
+.button--ghost { border-color: var(--line); color: var(--ink); }
+.button--ghost:hover { border-color: var(--accent-text); }

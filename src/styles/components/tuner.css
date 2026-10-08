@@ -1,0 +1,86 @@
+.tuner {
+  padding: clamp(1.5rem, 3vw, 2rem);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  background: var(--surface);
+  box-shadow: 0 24px 48px -24px color-mix(in srgb, var(--accent) 45%, transparent);
+  animation: enter 0.8s var(--ease) 0.25s both;
+  transition: background-color 0.3s var(--ease), box-shadow 0.3s var(--ease);
+}
+
+.tuner__title { font-size: var(--step-1); }
+.tuner__hint { margin-top: 0.5rem; color: var(--ink-soft); font-size: var(--step--1); }
+
+.tuner__group { min-inline-size: 0; margin: 1.5rem 0 0; padding: 0; border: 0; }
+.tuner__legend { margin-bottom: 0.75rem; padding: 0; font-size: var(--step--1); font-weight: 600; }
+
+.swatches { display: flex; flex-wrap: wrap; gap: 0.75rem; }
+.swatch { position: relative; }
+
+.swatch__input {
+  position: absolute;
+  inset: 0;
+  margin: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.swatch__dot {
+  display: block;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background: var(--swatch);
+  transition: transform 0.2s var(--ease);
+}
+
+.swatch__dot[data-swatch="cobalt"] { --swatch: #3b4bff; }
+.swatch__dot[data-swatch="mint"]   { --swatch: #19c3a0; }
+.swatch__dot[data-swatch="sun"]    { --swatch: #ffb938; }
+.swatch__dot[data-swatch="rose"]   { --swatch: #d42a5e; }
+
+.swatch__input:hover + .swatch__dot { transform: scale(1.08); }
+.swatch__input:checked + .swatch__dot { outline: 3px solid var(--ink); outline-offset: 3px; }
+.swatch__input:focus-visible + .swatch__dot { outline: 3px solid var(--accent-text); outline-offset: 5px; }
+
+.segmented {
+  display: inline-flex;
+  padding: 0.25rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-pill);
+  background: var(--paper);
+}
+
+.segmented__option { position: relative; }
+
+.segmented__input {
+  position: absolute;
+  inset: 0;
+  margin: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.segmented__label {
+  display: block;
+  padding: 0.45rem 1.1rem;
+  border-radius: var(--radius-pill);
+  color: var(--ink-soft);
+  font-size: var(--step--1);
+  font-weight: 600;
+  transition: background-color 0.2s var(--ease), color 0.2s var(--ease);
+}
+
+.segmented__input:checked + .segmented__label { background: var(--accent); color: var(--accent-ink); }
+.segmented__input:focus-visible + .segmented__label { outline: 3px solid var(--accent-text); outline-offset: 2px; }
+
+.tuner__token {
+  display: block;
+  margin-top: 1.5rem;
+  padding: 0.75rem 1rem;
+  border-radius: var(--radius-md);
+  background: var(--paper);
+  color: var(--ink-soft);
+  font-family: var(--font-code);
+  font-size: var(--step--1);
+}
